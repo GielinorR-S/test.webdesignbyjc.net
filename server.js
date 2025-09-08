@@ -1,6 +1,6 @@
 import express from 'express';
 const app = express();
-const PORT = process.env.PORT || 80;
+const PORT = process.env.PORT || 10000;
 
 app.get('/api/test', (req, res) => {
   res.json({ message: 'Backend is working!' });
