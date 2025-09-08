@@ -8,7 +8,7 @@ function App() {
   const [apiMessage, setApiMessage] = useState('');
 
   useEffect(() => {
-    fetch('/api/test')
+  fetch('https://your-app-name.onrender.com/api/test')
       .then(res => res.json())
       .then(data => setApiMessage(data.message))
       .catch(() => setApiMessage('Could not reach backend'));
